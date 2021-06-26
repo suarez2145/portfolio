@@ -17,7 +17,9 @@ module.exports = {
         // path.resolve __dir gets our current absolute path and combines it with the dist/js 
         // this creates our path to where we want the webpack output file to go
         path: path.resolve(__dirname, 'dist'),
-        publicPath: "/portfolio/",
+        // publicpath has to be set to '/' when set to custom domain so it will take new domain name and then add '/' before asset files and load them if set to something else it cant load them.
+        // publicpath has to be set to github profile username to serve assets to your github pages if using github pages to display page 
+        publicPath: "/",
         // file name for the file that our webpack will output
         filename: 'js/bundle.js',
     },
