@@ -19,7 +19,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         // publicpath has to be set to '/' when set to custom domain so it will take new domain name and then add '/' before asset files and load them if set to something else it cant load them.
         // publicpath has to be set to github profile username to serve assets to your github pages if using github pages to display page 
-        publicPath: "/portfolio/",
+        publicPath: "/",
         // file name for the file that our webpack will output
         filename: 'js/bundle.js',
     },
